@@ -152,15 +152,6 @@ select:focus {
     color: white;
     border-color: #6c63ff;
 }
-/* Search */
-
-.search-box {
-    margin-bottom: 15px;
-}
-
-.search-box input {
-    width: 100%;
-}
 
 /* Task Card */
 

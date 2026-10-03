@@ -6,9 +6,7 @@ const pendingTasks = document.getElementById("pendingTasks");
 const completedTasks = document.getElementById("completedTasks");
 
 const filters = document.querySelectorAll(".filter");
-const searchInput = document.getElementById("searchInput");
 
-let currentSearch = "";
 let tasks = [];
 
 let currentFilter = "all";
@@ -43,26 +41,18 @@ taskForm.addEventListener("submit", function(event) {
 
 
 // Display tasks
-// Display tasks
 function displayTasks() {
+
     taskList.innerHTML = "";
 
     let filteredTasks = tasks;
 
-    // Filter by status
     if (currentFilter === "pending") {
-        filteredTasks = filteredTasks.filter(task => !task.completed);
+        filteredTasks = tasks.filter(task => !task.completed);
     }
 
     if (currentFilter === "completed") {
-        filteredTasks = filteredTasks.filter(task => task.completed);
-    }
-
-    // Filter by search text
-    if (currentSearch !== "") {
-        filteredTasks = filteredTasks.filter(task =>
-            task.title.toLowerCase().includes(currentSearch.toLowerCase())
-        );
+        filteredTasks = tasks.filter(task => task.completed);
     }
 
     if (filteredTasks.length === 0) {
@@ -71,10 +61,12 @@ function displayTasks() {
                 No tasks to show.
             </div>
         `;
+
         return;
     }
 
     filteredTasks.forEach(task => {
+
         const taskElement = document.createElement("div");
 
         taskElement.className = "task";
@@ -95,7 +87,6 @@ function displayTasks() {
 
                 <div class="task-info">
                     <h3>${task.title}</h3>
-
                     <p>
                         ${task.subject} • Due: ${formatDate(task.dueDate)}
                     </p>
@@ -122,6 +113,7 @@ function displayTasks() {
         taskList.appendChild(taskElement);
     });
 }
+
 
 // Mark task as completed
 function toggleTask(id) {
@@ -192,8 +184,3 @@ function formatDate(date) {
 
     return `${parts[2]}/${parts[1]}/${parts[0]}`;
 }
-// Search tasks
-searchInput.addEventListener("input", function() {
-    currentSearch = this.value.trim();
-    displayTasks();
-});
