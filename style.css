@@ -107,8 +107,8 @@ select:focus {
 
 .add-btn {
     border: none;
-    background: #6c63ff;
-    color: white;
+    background: #08070e;
+    color: rgb(236, 236, 236);
     padding: 11px 20px;
     border-radius: 7px;
     cursor: pointer;
