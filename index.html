@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <div>
+                <h1>Student Task Manager</h1>
+                <p>Keep track of your assignments, projects, and deadlines.</p>
+            </div>
+        </header>
+
+        <!-- Dashboard -->
+        <section class="dashboard">
+            <div class="stat-card">
+                <span>Total Tasks</span>
+                <strong id="totalTasks">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <span>Pending</span>
+                <strong id="pendingTasks">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <span>Completed</span>
+                <strong id="completedTasks">0</strong>
+            </div>
+        </section>
+
+        <!-- Add Task -->
+        <section class="task-form">
+            <h2>Add New Task</h2>
+
+            <form id="taskForm">
+
+                <div class="form-group">
+                    <label for="taskTitle">Task</label>
+                    <input
+                        type="text"
+                        id="taskTitle"
+                        placeholder="e.g. Complete Linear Algebra assignment"
+                        required
+                    >
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input
+                            type="text"
+                            id="subject"
+                            placeholder="e.g. Linear Algebra"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dueDate">Due Date</label>
+                        <input
+                            type="date"
+                            id="dueDate"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="priority">Priority</label>
+                        <select id="priority">
+                            <option value="Low">Low</option>
+                            <option value="Medium" selected>Medium</option>
+                            <option value="High">High</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <button type="submit" class="add-btn">
+                    + Add Task
+                </button>
+
+            </form>
+        </section>
+
+        <!-- Tasks -->
+        <section class="tasks-section">
+
+            <div class="tasks-header">
+                <h2>My Tasks</h2>
+
+                <div class="filters">
+                    <button class="filter active" data-filter="all">
+                        All
+                    </button>
+
+                    <button class="filter" data-filter="pending">
+                        Pending
+                    </button>
+
+                    <button class="filter" data-filter="completed">
+                        Completed
+                    </button>
+                </div>
+            </div>
+
+            <div id="taskList" class="task-list">
+                <!-- Tasks will be added here -->
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
