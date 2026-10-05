@@ -290,11 +290,11 @@ in a web browser.
 
 ### Adding a Task
 
-![Adding a Task](screenshots\adding task.png)
+![Adding a Task](screenshots\addingtask.png)
 
 ### Completed Tasks
 
-![Completed Tasks](screenshots\completed task.png)
+![Completed Tasks](screenshots\completedtask.png)
 
 ---
 
