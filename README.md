@@ -286,17 +286,16 @@ in a web browser.
 
 ### Home Page
 
-![Student Task Manager Home Page](<img width="1917" height="877" alt="homepage" src="https://github.com/user-attachments/assets/2511ce5b-1e9d-48cf-a8fa-349ec0f9b46f" />
-)
+![Student Task Manager Home Page](https://github.com/user-attachments/assets/2511ce5b-1e9d-48cf-a8fa-349ec0f9b46f)
 
 ### Completed Tasks
 
-![Completed Tasks](<img width="1906" height="897" alt="completedtask" src="https://github.com/user-attachments/assets/30bbf9bd-dede-4c8f-bc6d-48b46c1b543b" />
-)
+![Completed Tasks](https://github.com/user-attachments/assets/30bbf9bd-dede-4c8f-bc6d-48b46c1b543b)
+
 
 ### Adding tasks
-![Adding tasks](<img width="1911" height="881" alt="addingtask" src="https://github.com/user-attachments/assets/de63923a-a4f7-40bc-9151-72937e9c11fc" />
-)
+![Adding tasks](https://github.com/user-attachments/assets/de63923a-a4f7-40bc-9151-72937e9c11fc)
+
 
 ---
 
